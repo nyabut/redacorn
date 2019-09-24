@@ -1,0 +1,93 @@
+.cms-buttons {
+  h1 {
+    text-align: center;
+    font-weight: 800;
+  }
+
+  button {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.25rem;
+    padding: 7px 40px;
+    border-width: 2px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      right: -2px;
+      border-width: 10px 10px 0 0;
+      border-style: solid;
+      display: block;
+      width: 0;
+    }
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  .button.tocart {
+    background-color: #886cfe;
+    border-radius: 0;
+    border-color: #886cfe;
+
+    &:hover {
+      background-color: #fff;
+    }
+
+    &:before {
+      border-color: #6c56cb #fff #6c56cb #fff;
+    }
+  }
+
+  .button.btn-continue {
+    background-color: #0283ff;
+    border-radius: 0;
+    border-color: #0283ff;
+    box-shadow: none;
+
+    &:hover {
+      background-color: #fff;
+    }
+
+    &:before {
+      border-color: #0168cc #fff #0168cc #fff;
+    }
+
+    span span {
+      display: none;
+    }
+
+    span:first-child {
+      &:before {
+        content: 'Back to Shop';
+      }
+
+      span:before {
+        content: '';
+      }
+    }
+
+  }
+
+  .action.primary {
+    background-color: #ffb903;
+    border-radius: 0;
+    border-color: #ffb903;
+    font-size: 1rem;
+    padding: 7px 40px;
+    border-width: 2px;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    &:before {
+      border-color: #cc9402 #fff #cc9402 #fff;
+    }
+  }
+}
